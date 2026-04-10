@@ -21,7 +21,7 @@ main(){
     sub(/,$/, "", $(NF-2));
     sub(/,$/, "", $(NF-1));
     sub(/,$/, "", $NF);
-    printf "%.2f %.2f %.2f", $(NF-2)/num_cores, $(NF-1)/num_cores, $NF/num_cores
+    printf "LOAD:%.2f %.2f %.2f", $(NF-2)/num_cores, $(NF-1)/num_cores, $NF/num_cores
   }'
 }
 
